@@ -1,0 +1,119 @@
+:root {
+    --primary: #1e3a8a; /* Deep Professional Blue */
+    --secondary: #475569; /* Slate Grey */
+    --accent: #f59e0b; /* Gold for Badge */
+    --border: #e2e8f0;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.5;
+    margin: 0;
+    padding: 50px 0;
+}
+
+.resume-paper {
+    width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+.contact-bar, .links-bar {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-top: 10px;
+}
+
+.contact-bar span, .links-bar span {
+    margin: 0 15px;
+}
+
+.contact-bar i { color: var(--primary); }
+
+/* Body Layout */
+.resume-body {
+    display: flex;
+    gap: 40px;
+}
+
+.col-main { width: 65%; }
+.col-side { width: 35%; }
+
+.section-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Education & Scores */
+.entry { margin-bottom: 20px; }
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.05rem;
+}
+
+.score-tag {
+    background: #eff6ff;
+    color: var(--primary);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    border: 1px solid #bfdbfe;
+}
+
+/* Skills & Badges */
+.skills-list {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8fafc;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid var(--border);
+}
+
+.talent-badge {
+    border: 1px solid var(--accent);
+    background: #fffbeb;
+}
+
+.talent-badge i { color: var(--accent); }
+
+.course-item {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid var(--border);
+}
